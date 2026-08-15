@@ -1,50 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="/styles/style.css">
+    <title>Portafolio | Mariana Hernández</title>
+    <!-- Fuentes requeridas: Archivo Black y Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Vinculación del archivo CSS en la carpeta styles -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-
 <body>
-    <header class="header-container">
-        <section class="header">
-            <h1 class="header--title">Mariana Hernández</h1>
 
-            <p class="header--subtitle">Desarrolladora Full-Stack Junior | TypeScript, React, Node.js</p>
-            <p class="header--description">Desarrolladora web junior con experiencia práctica creando interfaces limpias
-                y responsivas con HTML,
-                CSS,
-                JavaScript
-                y React, así como implementando lógica básica de back-end. Ha trabajado en proyectos formativos que
-                siguen
-                procesos
-                reales de desarrollo, usando Git, GitHub y Figma. Disfruta colaborar en equipo, mantener un código claro
-                y
-                resolver
-                problemas de forma estructurada. Motivada por seguir aprendiendo, asumir nuevos retos y aprovechar
-                oportunidades
-                para crecer como desarrolladora.</p>
-
-            <nav class="header-nav">
-                <li>
-                    <a href="">Descargar CV</a>
-                </li>
-                <li>
-                    <a href="">Enlace a GitHub</a>
-                </li>
-                <li>
-                    <a href="">Hablemos</a>
-                </li>
-            </nav>
-
-        </section>
-        <img class="header-image" src="./images/Rectangle 1.png" alt="Cafetería ilustración">
+    <!-- Cabecera principal -->
+    <header class="hero container">
+        <div class="hero-content">
+            <h1>Mariana <span class="line-break">Hernández</span></h1>
+            <p class="subtitle">Desarrolladora Full-Stack Junior | TypeScript, React, Node.js</p>
+            <p class="bio">
+                Desarrolladora web junior con experiencia práctica creando interfaces limpias y responsivas
+                con HTML, CSS, JavaScript y React, así como implementando lógica básica de back-end. Ha
+                trabajado en proyectos formativos que siguen procesos reales de desarrollo, usando Git,
+                GitHub y Figma. Disfruta colaborar en equipo, mantener un código claro y resolver problemas
+                de forma estructurada. Motivada por seguir aprendiendo, asumir nuevos retos y aprovechar
+                oportunidades para crecer como desarrolladora.
+            </p>
+            <ul class="actions">
+                <li><a href="#">Descargar CV</a></li>
+                <li><a href="#">Enlace a GitHub</a></li>
+                <li><a href="#">Hablemos</a></li>
+            </ul>
+        </div>
+        <div class="hero-image">
+            <img src="./images/Rectangle 1.png" alt="Foto de perfil de Mariana Hernández">
+            <div class="img-size-badge">
+                <p>387 × 500</p>
+            </div>
+        </div>
     </header>
+
+    <main class="container">
+        <!-- Sección Habilidades -->
+        <section class="skills">
+            <h2>Habilidades y herramientas</h2>
+            <!-- Se utilizan imágenes en lugar de etiquetas <i> para cumplir la semántica -->
+            <ul class="skills-icons">
+                <li><img src="https://cdn.simpleicons.org/html5/e34f26" alt="Logotipo de HTML5" class="tech-icon"></li>
+                <li><img src="https://cdn.simpleicons.org/css3/1572b6" alt="Logotipo de CSS3" class="tech-icon"></li>
+                <li><img src="https://cdn.simpleicons.org/javascript/f7df1e" alt="Logotipo de JavaScript"
+                        class="tech-icon"></li>
+                <li><img src="https://cdn.simpleicons.org/git/f05032" alt="Logotipo de Git" class="tech-icon"></li>
+                <li><img src="https://cdn.simpleicons.org/github/ffffff" alt="Logotipo de GitHub" class="tech-icon">
+                </li>
+                <li><img src="https://cdn.simpleicons.org/openai/ffffff" alt="Logotipo de Inteligencia Artificial"
+                        class="tech-icon"></li>
+            </ul>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section class="projects">
+            <h2>Proyectos destacados</h2>
+            <ul class="projects-grid">
+
+                <!-- Proyecto 1 -->
+                <li>
+                    <article class="card">
+                        <img src="https://placehold.co/600x350/ffffff/333333?text=Mockup+Cafeteria"
+                            alt="Captura de pantalla de la página web de una cafetería" class="card-img">
+                        <div class="card-content">
+                            <h3>Página web de una cafetería</h3>
+                            <p>
+                                Desarrollo de una landing page responsiva para una cafetería siguiendo un brief de
+                                diseño.
+                                Incluye estructura semántica, maquetación con Flexbox, creación de secciones nuevas y un
+                                formulario de contacto funcional.
+                            </p>
+                            <p>
+                                Logro: Implementé desde cero el diseño completo de la página, organicé el proyecto con
+                                buenas
+                                prácticas y publiqué la versión final utilizando GitHub Pages.
+                            </p>
+                            <ul class="card-links">
+                                <li><a href="#">Demo en vivo</a></li>
+                                <li><a href="#">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+
+                <!-- Proyecto 2 -->
+                <li>
+                    <article class="card">
+                        <img src="https://placehold.co/600x350/6b63ff/ffffff?text=Proyecto+Vacio"
+                            alt="Captura de pantalla de mi proyecto destacado" class="card-img">
+                        <div class="card-content">
+                            <h3>Mi proyecto</h3>
+                            <p>Descripción del proyecto</p>
+                            <ul class="card-links">
+                                <li><a href="#">Demo en vivo</a></li>
+                                <li><a href="#">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pie de página / Contacto -->
+    <footer class="container footer-section">
+        <h2>Contacto</h2>
+        <a href="mailto:student@tripleten.com" class="email-link">student@tripleten.com</a>
+
+        <ul class="social-icons">
+            <li><a href="#"><img src="https://cdn.simpleicons.org/linkedin/ffffff" alt="Perfil de LinkedIn"
+                        class="social-icon"></a></li>
+            <li><a href="#"><img src="https://cdn.simpleicons.org/facebook/ffffff" alt="Perfil de Facebook"
+                        class="social-icon"></a></li>
+            <li><a href="#"><img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Perfil de Instagram"
+                        class="social-icon"></a></li>
+            <li><a href="#"><img src="https://cdn.simpleicons.org/x/ffffff" alt="Perfil de X Twitter"
+                        class="social-icon"></a></li>
+        </ul>
+    </footer>
 
 </body>
 
